@@ -1,0 +1,114 @@
+/* Add font imports at the beginning */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@900&family=Neucha&family=Open+Sans&family=Ubuntu&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+  color: black;
+  scroll-behavior: smooth;
+}
+
+.right {
+  flex: 1;
+  float: right;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 40px;
+}
+
+.menu {
+  flex:1;
+
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  list-style: none;
+}
+
+.container {
+  /* padding: 0; */
+  margin: 0;
+  font-weight: 400;
+  display: flex; 
+  justify-content: space-between; 
+  /* align-items: center;  */
+}
+
+.logo {
+  display: flex; 
+  align-items: center;
+  flex: 1;
+}
+
+.logo > span {
+  width: 3em;
+  height: 3rem;
+  margin-right: 10px;
+}
+.h2{
+  display: grid;
+  text-align: center;
+  margin-right: 10rem;
+  margin-bottom: 1rem; 
+  justify-content: center;
+    
+}
+.h3{
+    margin-right: 8rem;
+    margin-bottom: 1rem; 
+}
+h5 {
+  margin-bottom: 0.5rem; 
+}
+.company-name {
+  margin-left: 1.5rem; /* Add margin to separate the logo and company name */
+}
+.search{
+  flex: 1; /* Take up all available space to fill the container */
+  padding-left: 70px; /* Adjust based on the icon's width */
+  padding-right: 70px; /* Adjust based on the voice icon's width */
+  border-radius: 5px; /* Add border-radius for a more rounded appearance */
+  height: 2rem;
+  border-color: rgb(12, 11, 11);
+    /* padding-right: 2rem; */
+    /* padding-left: 2rem; */
+     /* width: 5rem;  */
+     /* height: 2rem;
+     border-color:rgb(122, 113, 113);
+     border-radius: 5px; */
+
+}
+.container.logo.search::after:hover{
+    cursor: pointer;
+}
+.homeIcon {
+  font-size: 2rem; /* Adjust the font-size to increase the icon size */
+  margin-left: 10px; /* Add margin to space the home icon from the search input */
+}
+.searchContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex: 1;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+}
+
+.search {
+  padding-left: 30px; /* Adjust based on the icon's width */
+  border-radius: 5px; /* Add border-radius for a more rounded appearance */
+}
+
+.voiceIcon {
+  margin-left: 5px; /* Adjust based on the desired spacing between the search input and voice icon */
+}
